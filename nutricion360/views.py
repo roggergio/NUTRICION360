@@ -2,4 +2,4 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def login(request):
-    return render(request, 'aside_1.html')
+    return render(request, 'navBar.html')
