@@ -24,5 +24,6 @@ urlpatterns = [
     path('navBar', views.navBar),
     path('aside_1', views.aside_1),
     path('price', views.price),
+    path('pacientes', views.pacientesList),
 
 ]

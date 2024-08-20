@@ -11,3 +11,6 @@ def navBar(request):
     return render(request, 'navBar.html')
 def price(request):
     return render(request, 'price.html')
+
+def pacientesList(request):
+    return render(request, 'pacientesList.html')
