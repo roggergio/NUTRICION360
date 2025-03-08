@@ -1,5 +1,5 @@
 """
-URL configuration for nutricion360 project.
+URL configuration for nutricion360V2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,15 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .  import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login),
-    path('navBar', views.navBar),
-    path('aside_1', views.aside_1),
-    path('aside_2', views.aside_2),
-    path('price', views.price),
-    path('pacientes', views.pacientesList),
-
 ]
