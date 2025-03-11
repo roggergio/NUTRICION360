@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Pacientes{% endblock %}
+
+{% block content %}
+<main>
+  <div class="datosgene">
+		<p><input type="number" id="kcalt" oninput="updateMacros()"> Kilocalorías Totales</p>
+  </div>
+
+  <p>Signos y síntomas <input type="text"></p>
+  <table>
+		<thead>
+			<tr>
+				<th>Distribución</th>
+				<th>Porcentaje</th>
+				<th>Calorías Parciales</th>
+				<th>G de Nutrimento</th>
+				<th>G/KG Peso Actual</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>H de C</td>
+				<td><input type="number" oninput="calorias_hdc()" value="0" id="phdc"></td>
+				<td id="cphdc"></td>
+				<td id="gnuthdc"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Proteína</td>
+				<td><input type="number" oninput="calorias_pro()" value="0" id="ppro"></td>
+				<td id="cppro"></td>
+				<td id="gnutpro"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Lípidos</td>
+				<td><input type="number" oninput="calorias_lip()" value="0" id="plip"></td>
+				<td id="cplip"></td>
+				<td id="gnutlip"></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Total</td>
+				<td id="totalpmacro"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</main>
+
+<script>
+  function updateMacros() {
+    calorias_hdc();
+    calorias_pro();
+    calorias_lip();
+  }
+
+  function calorias_hdc() {
+    const kcalTotal = parseFloat(document.getElementById("kcalt").value) || 0;
+    const porcentaje = parseFloat(document.getElementById("phdc").value) || 0;
+
+    const caloriasParciales = (kcalTotal * porcentaje) / 100;
+    document.getElementById("cphdc").textContent = caloriasParciales.toFixed(2);
+
+    const gramosNutrimento = caloriasParciales / 4;
+    document.getElementById("gnuthdc").textContent = gramosNutrimento.toFixed(2);
+  }
+
+  function calorias_pro() {
+    const kcalTotal = parseFloat(document.getElementById("kcalt").value) || 0;
+    const porcentaje = parseFloat(document.getElementById("ppro").value) || 0;
+
+    const caloriasParciales = (kcalTotal * porcentaje) / 100;
+    document.getElementById("cppro").textContent = caloriasParciales.toFixed(2);
+
+    const gramosNutrimento = caloriasParciales / 4;
+    document.getElementById("gnutpro").textContent = gramosNutrimento.toFixed(2);
+  }
+
+  function calorias_lip() {
+    const kcalTotal = parseFloat(document.getElementById("kcalt").value) || 0;
+    const porcentaje = parseFloat(document.getElementById("plip").value) || 0;
+
+    const caloriasParciales = (kcalTotal * porcentaje) / 100;
+    document.getElementById("cplip").textContent = caloriasParciales.toFixed(2);
+
+    const gramosNutrimento = caloriasParciales / 9;
+    document.getElementById("gnutlip").textContent = gramosNutrimento.toFixed(2);
+  }
+</script>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'baseConsultar.html' %}
+
+{% block title %}enfermedades{% endblock %}
+
+{% block content %}
+<main>
+  <section class="derecha">
+    <br>
+    <br>
+    <br>
+    <button> nuevo registro</button>
+    <button>guardar</button>
+    <button>editar</button>
+    <button>eliminar</button>
+
+  </section>
+    <article class="datos_generales bordes">
+        <form action="">
+
+            <p>id<input type="text"></p>
+            <p>enfermedad<input type="text"></p>
+            <p>descripción <textarea name="descripcion_enfer" id="" cols="30" rows="10"></textarea></p>
+            <p>tratamiento nutricional<textarea name="tratamiento_nut" id="" cols="30" rows="10"></textarea></p>
+            <p>bibliografía<input type="text"></p>
+            <p>link<input type="text"></p>
+
+        </form>
+    </article>
+</main>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}r24{% endblock %}
+
+{% block content %}
+
+<form action="">
+  <h3>R24</h3>
+  <table border="1" id="r24Table">
+    <thead>
+      <tr>
+        <th colspan="3">Indica todos los alimentos que hayas consumido en las últimas 24 horas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Horario</th>
+        <th>Descripción</th>
+        <th>Observaciones</th>
+      </tr>
+      <tr>
+        <td><input type="time" name="horario[]" required></td>
+        <td><input type="text" name="descripcion[]" placeholder="Ej: Huevos con pan" required></td>
+        <td><input type="text" name="observaciones[]" placeholder="Opcional"></td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" onclick="addRow()">Añadir fila</button>
+  <input type="submit" value="Guardar">
+</form>
+
+<script>
+  function addRow() {
+    const table = document.getElementById("r24Table").getElementsByTagName("tbody")[0];
+    const newRow = table.insertRow();
+
+    newRow.innerHTML = `
+      <td><input type="time" name="horario[]" required></td>
+      <td><input type="text" name="descripcion[]" placeholder="Ej: Huevos con pan" required></td>
+      <td><input type="text" name="observaciones[]" placeholder="Opcional"></td>
+    `;
+  }
+</script>
+
+{% endblock %}

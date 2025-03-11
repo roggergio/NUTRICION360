@@ -1,0 +1,33 @@
+{% extends 'baseConsultar.html' %}
+
+{% block title %}enfermedades{% endblock %}
+
+{% block content %}
+<main>
+  <section class="derecha">
+    <br>
+    <br><br>
+    <br>
+    <button> nuevo registro</button>
+    <button>guardar</button>
+    <button>editar</button>
+    <button>eliminar</button>
+
+  </section>
+    <article class="datos_generales bordes">
+        <form action="">
+
+            <p>id<input type="text"></p>
+            <p>indicador<input type="text"></p>
+            <p>limite inferior<input type="text"></p>
+            <p>limite superior<input type="text"></p>
+            <p>recomendaciones en deficiencia<input type="text"></p>
+            <p>recomendaciones por exceso<input type="text"></p>
+            <p>bibliografía<input type="text"></p>
+            <p>link<input type="text"></p>
+
+
+        </form>
+    </article>
+</main>
+{% endblock %}

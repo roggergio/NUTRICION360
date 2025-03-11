@@ -1,0 +1,87 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Lista de Pacientes{% endblock %}
+
+{% block content %}
+
+<table>
+  <h3>alergias y toxicomanias</h3>
+  <thead>
+      <tr>
+          <th>Indicador</th>
+          <th>si/no</th>
+          <th colspan="2">frecuencia</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>alcohol</p>
+      </td>
+
+      <td>
+        <input type="checkbox" value="1">
+      </td>
+      <td>
+        <p><input type="number">veces</p>
+      </td>
+      <td>
+        <select name="" id="">
+          <option value="nunca">nunca</option>
+          <option value="diario">diario</option>
+          <option value="semana">semana</option>
+          <option value="mes">mes</option>
+          <option value="año">año</option>
+
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>tabaco</p>
+      </td>
+
+      <td>
+        <input type="checkbox" value="1">
+      </td>
+      <td>
+        <p><input type="number">veces</p>
+      </td>
+      <td>
+        <select name="" id="">
+          <option value="nunca">nunca</option>
+          <option value="diario">diario</option>
+          <option value="semana">semana</option>
+          <option value="mes">mes</option>
+          <option value="año">año</option>
+
+        </select>
+      </tr>
+    <tr>
+
+      <td>
+        <p><input type="text">otro</p>
+      </td>
+
+      <td>
+        <input type="checkbox" value="1">
+      </td>
+      <td>
+        <p><input type="number">veces</p>
+      </td>
+      <td>
+        <select name="" id="">
+          <option value="nunca">nunca</option>
+          <option value="diario">diario</option>
+          <option value="semana">semana</option>
+          <option value="mes">mes</option>
+          <option value="año">año</option>
+
+        </select>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

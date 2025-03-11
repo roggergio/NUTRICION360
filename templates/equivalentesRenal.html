@@ -1,0 +1,1181 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Pacientes{% endblock %}
+
+{% block content %}
+<main>
+  <table class="pequeño">
+      <thead>
+          <tr>
+              <th colspan="2">Grupo de Alimentos</th>
+              <th>Equivalentes</th>
+              <th>Energía</th>
+              <th>H de C</th>
+              <th>Proteína</th>
+              <th>Lípidos</th>
+              <th>agua mg</th>
+              <th>calcio mg</th>
+              <th>fósforo mg</th>
+              <th>potasio mg</th>
+              <th>sodio mg</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td rowspan="3">verduras</td>
+              <td><p>bajas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>moderadas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="3">frutas</td>
+              <td><p>bajas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>moderadas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="3">leguminosas</td>
+              <td><p>bajos en fósforo, altas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en fósforo y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en sodio y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">cereales sin grasa</td>
+              <td><p>bajos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">cereales con grasa</td>
+              <td><p>bajos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal muy bajo en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal bajo en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal moderado en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal alto en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">leche entera</td>
+              <td><p>bajo en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td >leche semidescremada</td>
+              <td><p>alto en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td>leche descremada</td>
+              <td><p>alta en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="3">leche con azúcar</td>
+              <td><p>bajo en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>no determinado en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">aceites y grasas sin proteina</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">aceites y grasas con proteina</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">azúcares sin grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td colspan="2">etanol</td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">condimentos</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">líquidos</td>
+              <td><p>bajo en sodio, fósforo y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio, bajo en fósforo y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+
+
+
+        <tr>
+              <td colspan="3">total</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+
+          </tr>
+          <tr>
+              <td colspan="3">recomendación</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+
+          </tr>
+          <tr>
+              <td colspan="3">% de adecuación</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+      </tbody>
+  </table>
+  <h1></h1>
+    <table>
+      <thead>
+          <tr>
+              <th colspan="2">Grupo de Alimentos</th>
+              <th>Equivalentes</th>
+              <th>Energía</th>
+              <th>H de C</th>
+              <th>Proteína</th>
+              <th>Lípidos</th>
+              <th>agua mg</th>
+              <th>calcio mg</th>
+              <th>fósforo mg</th>
+              <th>potasio mg</th>
+              <th>sodio mg</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td rowspan="3">verduras</td>
+              <td><p>bajas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>moderadas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="3">frutas</td>
+              <td><p>bajas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>moderadas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="3">leguminosas</td>
+              <td><p>bajos en fósforo, altas en potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en fósforo y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altas en sodio y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">cereales sin grasa</td>
+              <td><p>bajos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">cereales con grasa</td>
+              <td><p>bajos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>altos en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal muy bajo en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal bajo en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal moderado en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">alimento de origen animal alto en grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">leche entera</td>
+              <td><p>bajo en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td >leche semidescremada</td>
+              <td><p>alto en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td>leche descremada</td>
+              <td><p>alta en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="3">leche con azúcar</td>
+              <td><p>bajo en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>no determinado en fósforo</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">aceites y grasas sin proteina</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">aceites y grasas con proteina</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">azúcares sin grasa</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td colspan="2">etanol</td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">condimentos</td>
+              <td><p>bajo en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td rowspan="2">líquidos</td>
+              <td><p>bajo en sodio, fósforo y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+          <tr>
+              <td><p>alto en sodio, bajo en fósforo y potasio</p></td>
+              <td><input type="number"></td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+
+
+
+        <tr>
+              <td colspan="3">total</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+
+          </tr>
+          <tr>
+              <td colspan="3">recomendación</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+
+          </tr>
+          <tr>
+              <td colspan="3">% de adecuación</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+          </tr>
+      </tbody>
+  </table>
+</main>
+{% endblock %}

@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Pacientes{% endblock %}
+
+{% block content %}
+<main>
+  <section class="datos_generales bordes">
+
+      <table>
+        <tr>
+          <th>Alimento</th>
+          <th>Cantidad</th>
+          <th>Frecuencia</th>
+        </tr>
+        <tr>
+          <td>Verduras</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Frutas</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Pan Dulce</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Tortilla</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Avena</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>leguminosas</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>pollo</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>pescado</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>res</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>puerco</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>queso</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>leche</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>aceites y grasas</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>azúcar</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>refresco</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>agua de sabor</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>galletas</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>alcohol</td>
+          <td><input type="range" min="0" max="10" oninput="showValue(this.value)"></td>
+          <td>
+            <select>
+              <option value="dia">Día</option>
+              <option value="semana">Semana</option>
+              <option value="mes">Mes</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </td>
+        </tr>
+
+
+</main>
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}bioquimicosPaciente{% endblock %}
+
+{% block content %}
+<section class="datos_generales bordes">
+<form action="">
+    <h3>Energía y Actividad Física</h3>
+    <table border = "1">
+      <thead>
+        <br>
+        <tr>
+            <th>Nivel de Actividad física <input type="text"></th> 
+        </tr>
+    </thead>
+    </table>
+    <br>
+        <table border = "1">
+      <thead>
+          <tr>
+              <th colspan = "3">Energía requerida del paciente</th> 
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <th>Fórmula</th> 
+            <th>Basal</th> 
+            <th>Total</th> 
+          </tr>
+          <tr> 
+            <td>H&B</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr> 
+              <td>FAO/OMS</td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+          </tr>
+          <tr> 
+              <td>MIFFIN</td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+          </tr>
+          <tr> 
+              <th>Totales</th> 
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+          </tr>
+      </tbody>
+    </table>
+  </form>
+</section>
+  <form action="">
+    <br>
+    <table broder = "1">
+      <thead>
+          <tr>
+              <th colspan = "3">Actividad Física</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <th>Intensidad</th> 
+            <th>Energía de Actividad</th>
+            <th>CAF</th> 
+          </tr>
+          <tr> 
+            <td><p>Sedentaria</p></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr> 
+            <td><p>Moderada</p></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr> 
+            <td><p>Alta</p></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+    </table>
+  </form>
+  
+{% endblock %}

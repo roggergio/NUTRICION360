@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Registro Nutri{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+  <body>
+    <section class="datos_generales bordes">
+  <form action="">
+    <h3>datos generales</h3>
+    <p>apellido paterno <input type="text"></p>
+    <p>apellido materno <input type="text"></p>
+    <p>nombre <input type="text"></p>
+    <p>teléfono <input type="number"></p>
+    <p>correo electronico <input type="email" ></p>
+
+
+
+    <a class="btn btn-primary w-100 py-2" type="submit" href="{% url 'price' %}">registrarme</a>
+  </form>
+</section>
+  </body>
+</html>

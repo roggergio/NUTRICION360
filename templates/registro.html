@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>lista nutriologos</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+
+
+  <div class="container">
+    <h1 class="text-center mt-5">lista nutriologos </h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">nombre</th>
+          <th scope="col">apellido</th>
+          <th scope="col">ciudad</th>
+          <th scope="col">email</th>
+          <th scope="col">phone/th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for nut in get_nutriologos %}
+
+        <tr>
+          <td>{{ nut.first_name }}</td>
+
+          <td>{{ nut.last_name }}</td>
+
+          <td>{{ nut.city }}</td>
+        
+          <td>{{ nut.phone }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

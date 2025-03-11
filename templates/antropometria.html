@@ -1,0 +1,62 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Antropometría{% endblock %}
+
+{% block content %}
+<section class="datos_generales bordes">
+  <form action="">
+    <h3>Antropometría</h3>
+    <p>Peso (kg) <input type="number" id="peso" step="0.01" required></p>
+    <p>Estatura (cm) <input type="number" id="estatura" step="0.1" required></p>
+    <p type="number" id="imc" step="0.01" readonly>Índice de Masa Corporal (IMC) <input type="number" id="imc" step="0.01" readonly></p>
+    <p>Perímetro de cintura (cm) <input type="number" id="cintura" step="0.1"></p>
+    <p>Perímetro de cadera (cm) <input type="number" id="cadera" step="0.1"></p>
+    <p>Relación cintura-cadera <input type="number" id="relacionCC" step="0.01" readonly></p>
+    <p>Porcentaje de grasa corporal (%) <input type="number" step="0.1"></p>
+    <p>Porcentaje de masa muscular (%) <input type="number" step="0.1"></p>
+  </form>
+</section>
+
+<script>
+  // Elementos del DOM
+  const pesoInput = document.getElementById('peso');
+  const estaturaInput = document.getElementById('estatura');
+  const imcInput = document.getElementById('imc');
+  const cinturaInput = document.getElementById('cintura');
+  const caderaInput = document.getElementById('cadera');
+  const relacionCCInput = document.getElementById('relacionCC');
+
+  // Calcular IMC
+  function calcularIMC() {
+    const peso = parseFloat(pesoInput.value);
+    const estatura = parseFloat(estaturaInput.value) / 100; // Convertir a metros
+
+    if (!isNaN(peso) && !isNaN(estatura) && estatura > 0) {
+      const imc = peso / (estatura * estatura);
+      imcInput.value = imc.toFixed(2); // Mostrar con dos decimales
+    } else {
+      imcInput.value = '';
+    }
+  }
+
+  // Calcular Relación Cintura-Cadera
+  function calcularRelacionCC() {
+    const cintura = parseFloat(cinturaInput.value);
+    const cadera = parseFloat(caderaInput.value);
+
+    if (!isNaN(cintura) && !isNaN(cadera) && cadera > 0) {
+      const relacion = cintura / cadera;
+      relacionCCInput.value = relacion.toFixed(2); // Mostrar con dos decimales
+    } else {
+      relacionCCInput.value = '';
+    }
+  }
+
+  // Event Listeners
+  pesoInput.addEventListener('input', calcularIMC);
+  estaturaInput.addEventListener('input', calcularIMC);
+  cinturaInput.addEventListener('input', calcularRelacionCC);
+  caderaInput.addEventListener('input', calcularRelacionCC);
+</script>
+{% endblock %}

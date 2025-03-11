@@ -1,0 +1,286 @@
+:root {
+  --terciario: #6a75d4e0;
+  --secundario: #F6BA6F;
+  --primario: #aafff1;
+  --alternativo: #FFD93D;
+  --paglogin:#243b55;
+  --footerbackground:#ED6665;
+  --alice:aliceblue;
+
+  --FuenteTitulo: 'Sigmar', cursive;
+  --Fuenteparrafo: 'Raleway', sans-serif;
+
+
+}
+
+
+.titulo {
+  font-size: 2rem;
+  font-family: var(--FuenteTitulo);
+
+}
+/**                                               Estilos de encabezados y parrafos**/
+h1,h2,h3,h4,h5{
+  text-align: center;
+  color:black;
+  font-family: var(--FuenteTitulo);
+  text-transform: capitalize;
+}
+h4,h5{
+
+  font-family: var(--Fuenteparrafo);
+
+}
+h1{
+  font-size: 4rem;
+
+}
+h2{
+  font-size: 3.2rem;
+}
+h3{
+  font-size: 2.4rem;
+}
+h4{
+  font-size: 1.8rem;
+}
+h5{
+  font-size: 1.2rem;
+}
+.p{
+  font-size: 1.8rem;
+  font-family: var(--Fuenteparrafo);
+  color:white;
+  justify-content: center;
+
+}
+p textarea {
+  width: 1 rem;
+  height: 10 rem;
+  display: block;
+  font-size: 1 rem;
+  text-align: center;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/**                                                         Barra de navegación**/
+nav {
+    background-color: var(--terciario);
+    justify-content: center;
+    align-items: center;
+
+  }
+  @media (max-width:400px) {
+    nav
+    {
+        background-color: var(--terciario);
+        padding: 1rem 0;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+    }
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  nav ul li:hover > ul {
+    display: block;
+    color:white;
+  }
+
+  nav ul ul {
+    display: none;
+    position: absolute;
+  }
+
+  nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+
+  }
+
+  nav ul ul li a {
+    padding: 10px 15px;
+    color: #000;
+  }
+
+  nav ul ul li a:hover {
+    background-color: var(--alternativo);
+  }
+
+  nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+  }
+
+  nav a:hover {
+    background-color: var(--alternativo);
+  }
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--terciario);
+    z-index: 9999;
+  }
+
+
+  /**                                                       barra lateral izquierda**/
+aside {
+
+  display: grid;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: var(--alice);
+  padding: 10px;
+  margin-top: 40px;
+  padding: 1 rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+
+.navegacion__enlace, a{
+  font-family: var(--FuenteTitulo);
+  color: var(--paglogin);
+}
+.navegacion__enlace--activo,
+.navegacion__enlace, a:hover{
+  color: var(--secundario);
+}
+aside:hover{
+  color: var(--terciario);
+}
+.sidebar{
+  max-height:50rem;
+  overflow-y: scroll;
+}
+  /**                                                                     main**/
+main {
+  margin-left: 220px;
+  padding: 10px;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+
+  background-color: var(--primario);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.datos_generales, .antrop{
+  display: grid;
+  justify-content: center;
+  margin:auto;
+  text-transform: capitalize;
+}
+.fijo input{
+  width: 38%;
+  height: 38%;
+  justify-content: right;
+  display: block;
+
+}
+.antrop{
+  display: grid;
+  margin:auto;
+  justify-content: center;
+}
+
+/**                                                                        footer**/
+.footer{
+  z-index:1;
+  display: grid;
+  position:relative;
+  grid-area: 12rem;
+}
+.burbujas{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  background: var(--footerbackground);
+  filter: url("#blob")
+}
+.burbuja{
+  position:absolute;
+  left:var(--position,50%);
+  right:0;
+  background: var(--footerbackground);
+  border-radius: 100%;
+  animation:bubble-size
+  var(--time, 4s)ease-in infinite
+  var(--delay,0s);
+}
+/**                                                      navegacion de nueva nutria**/
+
+/**                                         tablas de antedentes y frecuencia de aimentos **/
+table {
+  border-collapse: collapse;
+
+}
+
+table, th, td {
+  margin: auto;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.derecha{
+  justify-content: right;
+  margin-right: 2%;
+  display: flex;
+}
+/**                                                                           botones **/
+button{
+  font-family: var(--Fuenteparrafo);
+  font-size: smaller;
+  color: var(--footerbackground);
+  margin: auto;
+  border-radius: 25% 10%;
+}
+/**                                                             entrada texto amplio**/
+.entradaTexto{
+  width: 20 px;
+  height: 20px;
+}
+img{
+  max-width: 70%;
+  max-height: 70%;
+  justify-content: center;
+}
+.logotipo{
+  background-image: url(Nutrición_360.png);
+}
+.pequeño{
+  font-size: .8rem;
+}

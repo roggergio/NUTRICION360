@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+
+{% block title %}bioquimicosPaciente{% endblock %}
+
+{% block content %}
+<h3>dieta</h3>
+
+<table>
+
+    <thead>
+        <tr>
+            <th colspan="2">alimento\comida</th>
+            <th>desayuno</th>
+            <th>colacion 1</th>
+            <th>comida</th>
+            <th>colacion 2</th>
+            <th>cena</th>
+            <th>total  de equivalentes</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td colspan="2">verduras</td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        <tr>
+            <td colspan="2">frutas</td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"><p>cereales </p></td>
+            <td><p>sin grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+
+        <tr>
+
+            <td><p>con grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td colspan="2">leguminosas</td>
+
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td rowspan="4">alimento de origen animal</td>
+            <td><p>muy bajo en grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td><p>bajo en grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><p>moderado en grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td><p>alto en grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="4">leche </td>
+            <td><p>descremada</p></td>
+
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td><p>semidescremada</p></td>
+
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+
+            <td><p>entera</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td><p>con azúcar</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="2">aceites y grasas</td>
+            <td><p>sin proteina</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td><p>con proteina</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="2">azúcares</td>
+            <td><p>sin grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td><p>con grasa</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+        <tr>
+            <td colspan="2"><p>alcohol</p></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+
+        </tr>
+
+    </tbody>
+</table>
+
+{% endblock %}

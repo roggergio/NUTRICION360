@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}Bioquímicos del Paciente{% endblock %}
+
+{% block content %}
+
+<form action="">
+  <h3>Medicamentos</h3>
+  <table id="medicamentosTable">
+    <tr>
+      <th>Nombre del Fármaco</th>
+      <th>Dosis</th>
+      <th>Frecuencia</th>
+      <th>Duración del Tratamiento</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td><input type="text" name="nombre_farmaco[]" required></td>
+      <td><input type="text" name="dosis[]" placeholder="e.g., 500 mg" required></td>
+      <td>
+        <select name="frecuencia[]" required>
+          <option value="diario">Diario</option>
+          <option value="semanal">Semanal</option>
+          <option value="mensual">Mensual</option>
+          <option value="otra">Otra</option>
+        </select>
+      </td>
+      <td><input type="text" name="duracion[]" placeholder="e.g., 2 semanas" required></td>
+      <td><input type="text" name="observaciones[]" placeholder="Opcional"></td>
+    </tr>
+  </table>
+  <button type="button" onclick="addRow()">Añadir Medicamento</button>
+  <input type="submit" value="Guardar">
+</form>
+
+<script>
+  function addRow() {
+    const table = document.getElementById("medicamentosTable");
+    const newRow = table.insertRow();
+
+    newRow.innerHTML = `
+      <td><input type="text" name="nombre_farmaco[]" required></td>
+      <td><input type="text" name="dosis[]" placeholder="e.g., 500 mg" required></td>
+      <td>
+        <select name="frecuencia[]" required>
+          <option value="diario">Diario</option>
+          <option value="semanal">Semanal</option>
+          <option value="mensual">Mensual</option>
+          <option value="otra">Otra</option>
+        </select>
+      </td>
+      <td><input type="text" name="duracion[]" placeholder="e.g., 2 semanas" required></td>
+      <td><input type="text" name="observaciones[]" placeholder="Opcional"></td>
+    `;
+  }
+</script>
+
+{% endblock %}
