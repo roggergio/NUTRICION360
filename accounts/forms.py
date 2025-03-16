@@ -29,12 +29,10 @@ class RegistrationForm(forms.ModelForm):
         ],
     )
 
-    email = forms.CharField(
-        widget=forms.TextInput(attrs={
-            'class': 'form-control',
-            'type': 'email',
-        }),
-    )
+    email = forms.EmailField(widget=forms.TextInput(attrs={
+        'class': 'form-control',
+        'type': 'email',
+    }))
 
     class Meta:
         model = Account
@@ -48,6 +46,22 @@ class RegistrationForm(forms.ModelForm):
         self.fields['email'].widget.attrs['placeholder'] = 'Ingrese email'
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'form-control'
+
+    def clean_first_name(self):
+        first_name = self.cleaned_data.get('first_name')
+        if not first_name:
+            raise ValidationError("El nombre es obligatorio.")
+        if len(first_name) < 3:
+            raise ValidationError("El nombre debe tener al menos 3 caracteres.")
+        return first_name
+
+    def clean_last_name(self):
+        last_name = self.cleaned_data.get('last_name')
+        if not last_name:
+            raise ValidationError("El apellido es obligatorio.")
+        if len(last_name) < 3:
+            raise ValidationError("El apellido debe tener al menos 3 caracteres.")
+        return last_name
 
     def validate_password_strength(self, password):
         if len(password) < 8:
@@ -63,7 +77,7 @@ class RegistrationForm(forms.ModelForm):
         confirm_password = cleaned_data.get('confirm_password')
 
         if password and confirm_password and password != confirm_password:
-            raise forms.ValidationError("El password no coincide.")
+            self.add_error('confirm_password', "El password no coincide.")
 
         # Validar la fortaleza de la contraseña
         try:
@@ -75,4 +89,6 @@ class RegistrationForm(forms.ModelForm):
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
+        if Account.objects.filter(email=email).exists():
+            raise ValidationError("El email ya está registrado.")
         return email.lower()

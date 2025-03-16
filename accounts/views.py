@@ -41,7 +41,7 @@ def register(request):
             mail_subject = 'Por favor activa tu cuenta en Nutrición 360'
             body = render_to_string('accounts/account_verification_email.html', {
                 'user': user,
-                'domain': current_site,
+                'domain': current_site.domain,
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': default_token_generator.make_token(user),
             })
@@ -50,12 +50,12 @@ def register(request):
             send_email.send()
 
             # Notificar al usuario que verifique su email
-            messages.success(request, 'Tu cuenta ha sido creada. Por favor, verifica tu email para activarla.')
-            return redirect('login')  # Puedes redirigir a una página de notificación si prefieres
+            messages.success(request, 'Tu cuenta ha sido creada. Verifica tu email para activarla.')
+            return redirect('login')
+        else:
+            messages.error(request, 'Corrige los errores en el formulario.')
 
-    context = {
-        'form': form
-    }
+    context = {'form': form}
     return render(request, 'accounts/register.html', context)
 
 def login(request):

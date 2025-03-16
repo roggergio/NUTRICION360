@@ -4,71 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Mi Proyecto{% endblock %}</title>
+    <title>{% block title %}Registro de Usuario{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 
-
-
-<!-- ========================= SECTION CONTENT ========================= -->
+<body>
 <section class="section-content padding-y">
-
-    <!-- ============================ COMPONENT REGISTER   ================================= -->
-        <div class="card mx-auto" style="max-width:520px; margin-top:40px;">
-          <article class="card-body">
+    <div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+        <article class="card-body">
             {% include 'includes/alerts.html' %}
 
             <header class="mb-4"><h4 class="card-title">Registro de Usuario</h4></header>
+
             <form action="{% url 'register' %}" method="POST">
-              {% csrf_token %}
+                {% csrf_token %}
 
+                <!-- Mostrar errores de validación -->
+                {% for field in form %}
+                    {% if field.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ field.label }}:</strong> {{ field.errors|striptags }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
 
-
-
-
-                    <div class="form-row">
-                        <div class="col form-group">
-                            <label>Nombre</label>
-                              {{ form.first_name }}
-                        </div> <!-- form-group end.// -->
-                        <div class="col form-group">
-                            <label>Apellido</label>
-                              {{ form.last_name }}
-                        </div> <!-- form-group end.// -->
-
-                        <div class="form-row">
-                            <div class="col form-group">
-                                <label>numero telefonico</label>
-                                  {{ form.phone_number }}
-                            </div> <!-- form-group end.// -->
-                            <div class="col form-group">
-                                <label>Email</label>
-                                  {{ form.email }}
-                            </div> <!-- form-group end.// -->
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label>Crear password</label>
-                            {{ form.password }}
-                        </div> <!-- form-group end.// -->
-                        <div class="form-group col-md-6">
-                            <label>Repetir password</label>
-                            {{ form.confirm_password }}
-                        </div> <!-- form-group end.// -->
+                <div class="form-row">
+                    <div class="col form-group">
+                        <label>Nombre</label>
+                        {{ form.first_name }}
                     </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block"> Registrar  </button>
-                    </div> <!-- form-group// -->
-                    {{ form.email.errors }}
-                    {{ form.non_field_errors }}
-                </form>
-            </article><!-- card-body.// -->
-        </div> <!-- card .// -->
-        <p class="text-center mt-4">Tienes una cuenta? <a href="{% url 'login' %}">Log In</a></p>
-        <br><br>
-    <!-- ============================ COMPONENT REGISTER  END.// ================================= -->
+                    <div class="col form-group">
+                        <label>Apellido</label>
+                        {{ form.last_name }}
+                    </div>
+                </div>
 
+                <div class="form-row">
+                    <div class="col form-group">
+                        <label>Número telefónico</label>
+                        {{ form.phone_number }}
+                    </div>
+                    <div class="col form-group">
+                        <label>Email</label>
+                        {{ form.email }}
+                    </div>
+                </div>
 
-    </section>
-    <!-- ========================= SECTION CONTENT END// ========================= -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Crear password</label>
+                        {{ form.password }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Repetir password</label>
+                        {{ form.confirm_password }}
+                    </div>
+                </div>
 
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                </div>
+
+            </form>
+        </article>
+    </div> 
+
+    <p class="text-center mt-4">¿Tienes una cuenta? <a href="{% url 'login' %}">Iniciar sesión</a></p>
+    <br><br>
+</section>
+</body>
+</html>
 {% endblock %}
