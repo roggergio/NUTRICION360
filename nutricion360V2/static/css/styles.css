@@ -12,6 +12,33 @@
 
 
 }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #c3f4f4;
+}
+.th, .td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+.th {
+  background-color: #00bfbf;
+  color: white;
+}
+.input, .select {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.button {
+  margin-top: 10px;
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
 
 
 .titulo {

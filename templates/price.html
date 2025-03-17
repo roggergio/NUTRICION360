@@ -109,6 +109,7 @@
   <main>
     <h3>Seleccione su suscripcion</h3>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
@@ -116,6 +117,47 @@
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$300<small class="text-body-secondary fw-light">/mes</small></h1>
+            <br>
+            <br>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+              <a href="{% url 'carrito' %}">
+              Seleccionar
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Plan Trimestral</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$800/ 3 meses<small class="text-body-secondary fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>12% de descuento</li>
+
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+              <a href="{% url 'carrito' %}">
+              Seleccionar
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Plan Semestral</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$140/6 meses<small class="text-body-secondary fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20% de descuento</li>
+
+            </ul>
 
             <button type="button" class="w-100 btn btn-lg btn-outline-primary">
               <a href="{% url 'carrito' %}">
@@ -128,47 +170,23 @@
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Plan trimestral</h4>
+            <h4 class="my-0 fw-normal">Plan anual</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$800<small class="text-body-secondary fw-light">/3 meses</small></h1>
+            <h1 class="card-title pricing-card-title">$2100/ 12 meses<small class="text-body-secondary fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>12% de descuento</li>
+              <li>40% de descuento</li>
 
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+              <a href="{% url 'carrito' %}">
+              Seleccionar
+              </a>
+            </button>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Plan Semestral</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$1440<small class="text-body-secondary fw-light">/6 meses</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20% de descuento</li>
-
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Seleccionar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Anual</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$2160<small class="text-body-secondary fw-light">/ 12 meses</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included40% de descuento</li>
-
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Seleccionar</button>
-          </div>
-        </div>
       </div>
     </div>
 
